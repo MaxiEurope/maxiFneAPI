@@ -38,7 +38,7 @@ const port = process.env.PORT || 3000;
 const config = require('./util/config.json');
 /** database */
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://maxi:' + process.env.MONGODBPASS + '@maxiapi-tfs4c.mongodb.net/test', {
+mongoose.connect('mongodb+srv://maxi:' + process.env.MONGODBPASS + process.env.MONGODBCLUSTER + '.mongodb.net/test', {
     useNewUrlParser: true
 });
 /** bot commands */
