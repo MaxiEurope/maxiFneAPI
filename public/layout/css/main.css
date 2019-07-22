@@ -1,0 +1,115 @@
+.header {
+    background-color: #1e1e1e;
+    background-size: 400% 400%;
+}
+#title {
+    font-family:Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    text-align: center;
+    margin-left: 26px;
+    margin-top: 1px;
+    color: white;
+}
+#c {
+    text-align: center;
+}
+.pos {
+    text-align: center;  
+}
+#header3 {
+    font-family:Helvetica,Arial,sans-serif;
+    font-size: 25px;
+    font-weight:lighter;
+    border: none;
+    background: none;
+    color: white;
+    margin-bottom: 35px;
+}
+.testbutton {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 75px;
+    padding: 5 0;
+    transition: 0.2s;
+    cursor: pointer;
+    align-content: center;
+    color: white;
+    background-color: #008ae2;
+    border: none;
+    font-size: 1.2em;
+}
+.testbutton:hover {
+    color: black;
+    background-color: coral;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.sidebutton {
+    color: rgb(194, 194, 194);
+    background-color:rgb(170, 51, 75);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    border:none;
+    border-radius: 25px 25px 25px 25px;
+    margin-top: 50px;
+    height: 80px;
+    width: 180px;
+    cursor: pointer;
+}
+.sidebutton:hover {
+    color: #222121;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.team {
+    font-family: Montserrat,sans-serif;
+    text-align: center;
+}
+.team-i {
+    font-family: Montserrat,sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+    overflow: hidden;
+}
+.team-b {
+    margin-top: -26px;
+}
+.team-n {
+    font-family: Montserrat,sans-serif;
+    margin: 16px 0px;
+    font-weight: bold;
+}
+div {
+    display: block;
+}
+.team-a {
+    float: left;
+    width: calc(100% / 4);
+    overflow: hidden;
+    padding: 40px 0;
+    transition: 0.4s;
+}
+* {
+    text-align: center;
+    color: #ffffff;
+}
+::-webkit-scrollbar {
+    width: 11px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 75px;
+    height: 30px;
+    background: rgb(111,111,111);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(91, 90, 90); 
+    border-radius: 50px;
+}

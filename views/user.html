@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= tag %></title>
+    <link rel="shortcut icon" href="<%= avatar %>" />
+    <meta charset="UTF-8">
+    <meta name="title" content="<%= tag %>" />
+    <meta name="description" content="<%= shortDesc %>" />
+    <meta name="theme-color" content="<%= color %>">
+    <meta property="og:title" content="<%= tag %>" />
+    <meta property="og:url" content="https://localhost:3000/users/<%= ID %>" />
+    <meta property="og:description" content="<%= shortDesc %>">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #1e1e1e;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            background-color: #36393f;
+        }
+
+        #headertitle {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            border: none;
+            text-align: center;
+            margin-top: 1px;
+            color: white;
+        }
+
+        .header {
+            background-color: <%= color %>;
+            background-size: 400% 400%;
+        }
+
+        .title {
+            color: #008ae2;
+            font-size: 18px;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h3 id="headertitle"><span style="background-color: #36393f"><%= tag %> profile card</span></h3>
+        <br>
+    </div>
+    <br>
+    <br>
+    <div class="card">
+        <br>
+        <img src="<%= avatar %>"
+            alt="User" style="width:70%;border-radius: 50% !important;border:3px solid black">
+        <h2><%= tag %></h2>
+        <p class="title">Fish n Economy User</p>
+        <p><%= shortDesc %></p>
+    </div>
+
+</body>
+
+</html>
