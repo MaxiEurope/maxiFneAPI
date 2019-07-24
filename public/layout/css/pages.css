@@ -1,6 +1,21 @@
 .pos {
     text-align: center;  
 }
+.header {
+    background-color: #1e1e1e;
+    background-size: 400% 400%;
+}
+#title {
+    font-family:Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    text-align: center;
+    margin-left: 26px;
+    margin-top: 10px;
+    color: white;
+}
 .mainbutton {
     color: white;
     background-color: #43b581;

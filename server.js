@@ -110,9 +110,7 @@ app.get('/', async function (req, res) {
 /** error event */
 /* eslint-disable no-unused-vars */
 app.use(function (req, res, next) {
-    return res.status(404).send({
-        error: 'This endpoint does not exist!'
-    });
+    return res.status(404).render(__dirname + '/public/html/error/404.html');
 });
 
 /** app listening on port */
@@ -186,17 +184,3 @@ function generateToken() {
     }
     return randomString;
 }
-
-/*
-function getGuildMembers(bot, req, res) {
-    let guildMembers = bot.guilds.get('438387515913797632').members.filter(b => b.user.bot).array();
-    let guildResult = [];
-    for (let i = 0; i < guildMembers.length; i++) {
-        let currentMember = guildMembers[i].user;
-        guildResult.push({
-            currentMemberID: currentMember.username
-        });
-    }
-    res.status(200).json(guildResult);
-}
-*/

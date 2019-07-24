@@ -1,6 +1,9 @@
 async function getUser(id, bot, res) {
 
     const Profile = require('../database/mongo/profile.js');
+    const {
+        toHTML
+    } = require('discord-markdown');
     Profile.findOne({
         userID: id
     }, async (err, user) => {
@@ -28,6 +31,7 @@ async function getUser(id, bot, res) {
                 ID: id,
                 avatar: uAvatar,
                 shortDesc: user.shortDesc,
+                longDesc: toHTML(user.longDesc),
                 createdAt: (new Date(user.createdAt)).toGMTString()
             });
         }
