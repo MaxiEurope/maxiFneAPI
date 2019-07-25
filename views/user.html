@@ -5,6 +5,8 @@
     <title><%= tag %></title>
     <link rel="shortcut icon" href="<%= avatar %>" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
     <link type="text/css" rel="stylesheet" href="../../layout/css/pages.css" />
     <link type="text/css" rel="stylesheet" href="../../layout/css/user.css" />
     <meta charset="UTF-8">
@@ -25,7 +27,7 @@
 
     <style>
         .header {
-            background-color: <%= color %>;
+            background-color: <%=color %>;
             background-size: 400% 400%;
         }
     </style>
@@ -50,7 +52,7 @@
     <div class="long-desc">
         <br>
         <p class="long-desc-title">Description</p>
-        <p><%= longDesc %></p>
+        <%- longDesc %>
     </div>
     <br>
     <div class="pos">

@@ -30,14 +30,14 @@ module.exports = {
                 if (!args.length) {
                     const embed = new discord.RichEmbed()
                         .setAuthor(`${message.author.tag}'s online profile`, message.author.avatarURL)
-                        .setURL(`http://localhost:3000/users/${message.author.id}`)
+                        .setURL(`http://fish-n-economy.ga/users/${message.author.id}`)
                         .addField('Short description', profile.shortDesc)
                         .addField('Long Description - supports markdown', profile.longDesc)
                         .addField('Color', profile.color)
                         .setColor(profile.color)
                         .setFooter('Account created at')
                         .setTimestamp(profile.createdAt);
-                    message.channel.send(`localhost:3000/users/${message.author.id}`, embed);
+                    message.channel.send(embed);
                 } else {
                     let type = args[0];
                     if (type.toLowerCase() === 'shortdesc') {
@@ -65,7 +65,7 @@ module.exports = {
                         return message.channel.send('🚫 **Invalid arguments!**');
                     }
                     message.channel.send('✅ **Successfully saved your information! It may take 5 seconds for the information to finally appear on the website.**\n' +
-                        '<http://localhost:3000/users/' + message.author.id + '/>');
+                        '<http://fish-n-economy.ga/users/' + message.author.id + '/>');
                 }
             }
         });

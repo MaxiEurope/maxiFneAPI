@@ -21,6 +21,7 @@ body {
     font-family: arial;
     background-color: #36393f;
     border: 1px solid white;
+    color: white;
 }
 
 .long-desc-title {
@@ -55,7 +56,7 @@ p {
 a {
     text-decoration: none;
     font-size: 22px;
-    color: black;
+    color: white;
 }
 
 @-webkit-keyframes pulsePic {
